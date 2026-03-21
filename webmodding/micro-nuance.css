@@ -1,0 +1,41 @@
+/* Katsuki Bakugo - At The Limit — subtle touches on injected pages (not the native address bar).
+ * Selection, scrollbars, focus rings, placeholders — red-orange/black identity without full reskins.
+ */
+::selection {
+  background-color: rgba(230, 62, 24, 0.42) !important;
+  color: #000000 !important;
+}
+
+:root {
+  scrollbar-color: rgba(230, 62, 24, 0.55) #0a0a0a;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(230, 62, 24, 0.75), rgba(230, 62, 24, 0.35));
+  border-radius: 6px;
+  border: 2px solid #0a0a0a;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 176, 74, 0.85);
+}
+
+:focus-visible {
+  outline: 2px solid var(--bakugo-accent) !important;
+  outline-offset: 2px !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--bakugo-text-muted) !important;
+  opacity: 1 !important;
+}

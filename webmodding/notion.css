@@ -1,0 +1,34 @@
+﻿/* Katsuki Bakugo - At The Limit - Notion (theme.css loaded via manifest) */
+/* Override Notion default theme */
+[data-content-editable-root],
+.notion-frame {
+  --notion-default: var(--bakugo-accent) !important;
+  --notion-text-default: var(--bakugo-text) !important;
+}
+
+/* Links */
+a[href],
+.notion-link {
+  color: var(--bakugo-accent) !important;
+}
+
+a:hover {
+  color: var(--bakugo-accent-hover) !important;
+}
+
+/* Sidebar */
+[data-block-id],
+.notion-sidebar {
+  background: var(--bakugo-bg-dark) !important;
+}
+
+/* Selected page, hover */
+[data-block-id].selected,
+.notion-page-block:hover {
+  background: var(--bakugo-accent-subtle) !important;
+}
+
+/* Toggle, checkbox when checked */
+input[type="checkbox"]:checked {
+  accent-color: var(--bakugo-accent) !important;
+}

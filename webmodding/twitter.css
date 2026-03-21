@@ -1,0 +1,140 @@
+﻿/* Katsuki Bakugo - At The Limit - X (Twitter) (theme.css loaded via manifest)
+ * Comprehensive overhaul - every element covered
+ */
+
+/* === ROOT: Override theme variables === */
+:root,
+html,
+[data-theme="dark"],
+[data-theme="light"],
+body {
+  --background-primary: #000000 !important;
+  --background-secondary: #121212 !important;
+  --background-tertiary: #080808 !important;
+  --color-primary: #E63E18 !important;
+  --color-primary-hover: #FF7845 !important;
+  --accent: #E63E18 !important;
+}
+
+/* === BASE === */
+body,
+html,
+[data-testid="primaryColumn"],
+[data-testid="sidebarColumn"],
+[role="main"] {
+  background-color: #000000 !important;
+}
+
+/* === SIDEBAR === */
+[data-testid="sidebarColumn"],
+[data-testid="RightSideBar"] {
+  background-color: #080808 !important;
+  border-left: 1px solid rgba(230, 62, 24, 0.3) !important;
+}
+
+/* === TWEETS / CARDS === */
+[data-testid="tweet"],
+[data-testid="cellInnerDiv"],
+article {
+  background-color: #121212 !important;
+  border: 1px solid rgba(230, 62, 24, 0.3) !important;
+}
+
+[data-testid="tweet"]:hover,
+[data-testid="cellInnerDiv"]:hover {
+  background-color: rgba(230, 62, 24, 0.08) !important;
+}
+
+/* === LINKS === */
+a,
+[data-testid="User-Name"] a,
+[data-testid="UserDescription"] a,
+[role="link"],
+[data-testid="tweetText"] a {
+  color: #E63E18 !important;
+}
+
+a:hover {
+  color: #FF7845 !important;
+}
+
+/* === BUTTONS - Like, Retweet, etc === */
+[data-testid="like"],
+[data-testid="unlike"],
+[data-testid="retweet"],
+[data-testid="unretweet"],
+[data-testid="reply"],
+[data-testid="bookmark"] {
+  color: rgba(230, 62, 24, 0.6) !important;
+}
+
+[data-testid="like"]:hover,
+[data-testid="unlike"]:hover,
+[data-testid="retweet"]:hover {
+  color: #E63E18 !important;
+}
+
+[data-testid="unlike"],
+[aria-label*="Liked"] {
+  color: #E63E18 !important;
+}
+
+/* === COMPOSE / TEXTAREA === */
+[data-testid="tweetTextarea_0"],
+[data-testid="tweetTextarea"],
+[role="textbox"],
+[contenteditable="true"] {
+  background-color: transparent !important;
+  border: 1px solid rgba(230, 62, 24, 0.3) !important;
+  color: #f0f0f0 !important;
+}
+
+[data-testid="tweetTextarea_0"]:focus,
+[data-testid="tweetTextarea"]:focus {
+  border-color: #E63E18 !important;
+}
+
+/* === POST BUTTON === */
+[data-testid="tweetButton"],
+[data-testid="tweetButtonInline"] {
+  background-color: #E63E18 !important;
+  color: #000000 !important;
+}
+
+[data-testid="tweetButton"]:hover,
+[data-testid="tweetButtonInline"]:hover {
+  background-color: #FF7845 !important;
+}
+
+/* === SEARCH === */
+[data-testid="SearchBox_Search_Input"],
+input[type="search"],
+input[placeholder*="Search"] {
+  background-color: #080808 !important;
+  border: 1px solid rgba(230, 62, 24, 0.3) !important;
+  color: #f0f0f0 !important;
+}
+
+[data-testid="SearchBox_Search_Input"]:focus {
+  border-color: #E63E18 !important;
+}
+
+/* === NAV / SIDEBAR LINKS === */
+[data-testid="SideNav"] a,
+[data-testid="AppTabBar_Home_Link"],
+[data-testid="AppTabBar_Explore_Link"],
+[data-testid="AppTabBar_Notifications_Link"],
+[data-testid="AppTabBar_Profile_Link"] {
+  color: #9ca3af !important;
+}
+
+[data-testid="SideNav"] a:hover,
+[data-testid="AppTabBar_Home_Link"]:hover,
+[data-testid="AppTabBar_Home_Link"][aria-selected="true"] {
+  color: #E63E18 !important;
+}
+
+/* === VERIFIED BADGE === */
+[data-testid="icon-verified"] {
+  color: #E63E18 !important;
+}

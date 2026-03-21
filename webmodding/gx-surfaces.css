@@ -1,0 +1,49 @@
+﻿/* Katsuki Bakugo - At The Limit — GX web (store, creator, games portal) when opened in a tab.
+ * Broad, low-specificity helpers; sites may override with more specific rules.
+ */
+html {
+  color-scheme: dark;
+}
+
+body {
+  color: var(--bakugo-text) !important;
+  background-color: var(--bakugo-bg-dark) !important;
+}
+
+main,
+article,
+section,
+[role="main"] {
+  color: inherit;
+}
+
+a[href],
+a[href]:visited {
+  color: var(--bakugo-accent) !important;
+}
+
+a[href]:hover {
+  color: var(--bakugo-accent-hover) !important;
+}
+
+button,
+[role="button"],
+input[type="submit"],
+input[type="button"] {
+  accent-color: var(--bakugo-accent);
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+textarea,
+select {
+  background-color: var(--bakugo-bg-elevated) !important;
+  color: var(--bakugo-text) !important;
+  border-color: var(--bakugo-border) !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--bakugo-accent) !important;
+  box-shadow: 0 0 0 1px var(--bakugo-accent) !important;
+}

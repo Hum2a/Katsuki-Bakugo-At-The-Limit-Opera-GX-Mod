@@ -1,0 +1,141 @@
+﻿/* Katsuki Bakugo - At The Limit - Discord (theme.css loaded via manifest)
+ * Comprehensive overhaul - every element covered
+ */
+
+/* === ROOT: Override ALL Discord theme variables === */
+:root,
+html,
+[class*="app"],
+[class*="layerContainer"] {
+  --background-primary: #000000 !important;
+  --background-secondary: #121212 !important;
+  --background-secondary-alt: #080808 !important;
+  --background-tertiary: #121212 !important;
+  --background-accent: rgba(230, 62, 24, 0.2) !important;
+  --background-floating: #121212 !important;
+  --background-mobile-primary: #000000 !important;
+  --background-mobile-secondary: #121212 !important;
+  --background-modifier-hover: rgba(230, 62, 24, 0.15) !important;
+  --background-modifier-active: rgba(230, 62, 24, 0.25) !important;
+  --background-modifier-selected: rgba(230, 62, 24, 0.2) !important;
+  --channeltextarea-background: #080808 !important;
+  --brand-experiment: #E63E18 !important;
+  --brand-experiment-560: #E63E18 !important;
+  --brand-experiment-600: #FF7845 !important;
+  --interactive-active: #E63E18 !important;
+  --interactive-hover: #FF7845 !important;
+  --interactive-muted: rgba(230, 62, 24, 0.5) !important;
+  --text-link: #E63E18 !important;
+  --text-positive: #E63E18 !important;
+  --text-brand: #E63E18 !important;
+}
+
+/* === BASE === */
+body,
+[class*="app"],
+[class*="layerContainer"],
+[class*="base"] {
+  background-color: #000000 !important;
+}
+
+/* === SIDEBAR - Servers === */
+[class*="guilds"],
+[class*="sidebar"],
+[class*="serverList"] {
+  background-color: #080808 !important;
+}
+
+/* === SIDEBAR - Channels === */
+[class*="channels"],
+[class*="channelList"],
+[class*="scroller"] {
+  background-color: #000000 !important;
+}
+
+/* === CHANNEL ITEM - Selected/Hover === */
+[class*="channel"],
+[class*="listItem"],
+[role="listitem"] {
+  color: #f0f0f0 !important;
+}
+
+[class*="channel"]:hover,
+[class*="listItem"]:hover,
+[role="listitem"]:hover {
+  background-color: rgba(230, 62, 24, 0.15) !important;
+  color: #E63E18 !important;
+}
+
+[class*="selected"],
+[class*="modeSelected"],
+[aria-selected="true"] {
+  background-color: rgba(230, 62, 24, 0.2) !important;
+  color: #E63E18 !important;
+  border-left: 3px solid #E63E18 !important;
+}
+
+/* === MAIN CHAT AREA === */
+[class*="chat"],
+[class*="messagesWrapper"],
+[class*="messageList"] {
+  background-color: #000000 !important;
+}
+
+/* === MESSAGES === */
+[class*="message"],
+[class*="messageContent"] {
+  background-color: transparent !important;
+}
+
+[class*="message"] a {
+  color: #E63E18 !important;
+}
+
+[class*="message"] a:hover {
+  color: #FF7845 !important;
+}
+
+/* === INPUT / TEXTAREA === */
+[class*="channelTextArea"],
+[class*="textArea"],
+[class*="slateTextArea"],
+textarea {
+  background-color: #080808 !important;
+  border: 1px solid rgba(230, 62, 24, 0.3) !important;
+  color: #f0f0f0 !important;
+}
+
+/* === LINKS === */
+a {
+  color: #E63E18 !important;
+}
+
+a:hover {
+  color: #FF7845 !important;
+}
+
+/* === ONLINE INDICATOR === */
+[class*="statusGreen"],
+[class*="online"],
+[class*="status"] circle[fill*="43b581"],
+[class*="status"] circle[fill*="57F287"] {
+  fill: #E63E18 !important;
+  color: #E63E18 !important;
+}
+
+/* === BUTTONS === */
+button[class*="primary"],
+[class*="lookFilled"] {
+  background-color: #E63E18 !important;
+  color: #000000 !important;
+}
+
+button[class*="primary"]:hover,
+[class*="lookFilled"]:hover {
+  background-color: #FF7845 !important;
+}
+
+/* === SCROLLBAR === */
+[class*="scrollbar"] {
+  background-color: rgba(230, 62, 24, 0.2) !important;
+}

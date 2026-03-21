@@ -1,0 +1,38 @@
+/* Katsuki Bakugo - At The Limit - Facebook (theme.css loaded via manifest) */
+/* Dark mode overrides */
+[data-theme="dark"],
+html[data-theme="dark"],
+[data-pagelet="root"] {
+  --primary-deemphasized-button-background: var(--bakugo-bg-elevated) !important;
+  --secondary-button-background: var(--bakugo-bg-elevated) !important;
+}
+
+/* Primary blue → Bakugo red-orange */
+[role="banner"] a,
+[data-pagelet="LeftRail"] a,
+a[href*="facebook.com"] {
+  color: var(--bakugo-accent) !important;
+}
+
+a:hover {
+  color: var(--bakugo-accent-hover) !important;
+}
+
+/* Primary buttons */
+[aria-label="Post"],
+[aria-label="Comment"],
+div[role="button"][tabindex="0"] {
+  background: var(--bakugo-accent) !important;
+}
+
+/* Like, comment icons - accent on hover */
+[aria-label="Like"],
+[aria-label="Comment"],
+[aria-label="Share"] {
+  color: var(--bakugo-accent-muted) !important;
+}
+
+/* Messenger - chat accents */
+[data-pagelet="MessengerChatTab"] a {
+  color: var(--bakugo-accent) !important;
+}

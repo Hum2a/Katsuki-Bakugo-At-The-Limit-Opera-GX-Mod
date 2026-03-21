@@ -1,0 +1,166 @@
+﻿/* Katsuki Bakugo - At The Limit - Reddit (theme.css loaded via manifest)
+ * Comprehensive overhaul - Old Reddit + New Reddit (Shreddit)
+ */
+
+/* === NEW REDDIT (Shreddit) - Root variables === */
+:root,
+shreddit-app,
+[data-shreddit-app] {
+  --color-background: #000000 !important;
+  --color-background-secondary: #121212 !important;
+  --color-background-tertiary: #080808 !important;
+  --color-accent: #E63E18 !important;
+  --color-accent-hover: #FF7845 !important;
+  --color-border: rgba(230, 62, 24, 0.3) !important;
+  --color-text-primary: #f0f0f0 !important;
+  --color-text-secondary: #9ca3af !important;
+}
+
+shreddit-app {
+  background-color: #000000 !important;
+}
+
+/* === NEW REDDIT - All elements === */
+shreddit-app *,
+[data-testid="frontpage-content"],
+[data-testid="post-container"],
+[data-testid="subreddit-sidebar"] {
+  --color-background: #000000 !important;
+  --color-background-secondary: #121212 !important;
+  --color-accent: #E63E18 !important;
+}
+
+/* New Reddit - post cards */
+article,
+[data-testid="post-container"],
+[role="article"] {
+  background-color: #121212 !important;
+  border: 1px solid rgba(230, 62, 24, 0.3) !important;
+  border-radius: 8px !important;
+}
+
+/* New Reddit - sidebar */
+aside,
+[data-testid="subreddit-sidebar"],
+[data-testid="community-sidebar"] {
+  background-color: #080808 !important;
+  border: 1px solid rgba(230, 62, 24, 0.3) !important;
+}
+
+/* New Reddit - links */
+a,
+[data-testid="post-title"],
+[data-click-id="body"],
+[data-testid="search-result-link"] {
+  color: #E63E18 !important;
+}
+
+a:hover,
+[data-testid="post-title"]:hover {
+  color: #FF7845 !important;
+}
+
+/* New Reddit - upvote/downvote */
+button[aria-label*="Upvote"],
+[data-testid="upvote-button"],
+[data-click-id="upvote"] {
+  color: rgba(230, 62, 24, 0.6) !important;
+}
+
+button[aria-label*="Upvote"][aria-pressed="true"],
+[data-testid="upvote-button"][aria-pressed="true"] {
+  color: #E63E18 !important;
+}
+
+/* New Reddit - header/nav */
+header,
+nav,
+[data-testid="header"],
+[data-testid="subreddit-header"] {
+  background-color: #000000 !important;
+  border-bottom: 1px solid rgba(230, 62, 24, 0.3) !important;
+}
+
+/* New Reddit - search/input */
+input,
+textarea,
+[data-testid="search-input"],
+[role="searchbox"] {
+  background-color: #080808 !important;
+  border: 1px solid rgba(230, 62, 24, 0.3) !important;
+  color: #f0f0f0 !important;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #E63E18 !important;
+}
+
+/* === OLD REDDIT === */
+body,
+html,
+#siteTable,
+.content,
+.side {
+  background-color: #000000 !important;
+}
+
+.thing,
+.link,
+.comment {
+  background-color: #121212 !important;
+  border: 1px solid rgba(230, 62, 24, 0.3) !important;
+}
+
+.thing:hover,
+.link:hover {
+  background-color: rgba(230, 62, 24, 0.1) !important;
+}
+
+a.title,
+a[href*="/r/"],
+a.subreddit {
+  color: #E63E18 !important;
+}
+
+a.title:hover,
+a[href*="/r/"]:hover {
+  color: #FF7845 !important;
+}
+
+/* Old Reddit - upvote */
+.arrow.up {
+  color: rgba(230, 62, 24, 0.6) !important;
+}
+
+.arrow.upmod {
+  color: #E63E18 !important;
+}
+
+/* Old Reddit - header */
+#header,
+#header-bottom-left,
+#header-bottom-right {
+  background-color: #000000 !important;
+  border-color: rgba(230, 62, 24, 0.3) !important;
+}
+
+/* Old Reddit - sidebar */
+.side,
+.sidebox {
+  background-color: #080808 !important;
+  border: 1px solid rgba(230, 62, 24, 0.3) !important;
+}
+
+.side a {
+  color: #E63E18 !important;
+}
+
+/* Old Reddit - forms */
+input[type="text"],
+input[type="search"],
+textarea {
+  background-color: #080808 !important;
+  border: 1px solid rgba(230, 62, 24, 0.3) !important;
+  color: #f0f0f0 !important;
+}

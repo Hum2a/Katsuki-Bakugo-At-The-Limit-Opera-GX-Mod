@@ -1,0 +1,42 @@
+/* Katsuki Bakugo - At The Limit - LinkedIn (theme.css loaded via manifest) */
+/* Override LinkedIn blue */
+:root {
+  --color-signature: var(--bakugo-accent) !important;
+  --color-signature-hover: var(--bakugo-accent-hover) !important;
+}
+
+/* Backgrounds */
+.global-nav,
+.scaffold-layout,
+main {
+  background: var(--bakugo-bg-dark) !important;
+}
+
+/* Links - LinkedIn blue → Bakugo red-orange */
+a,
+.app-aware-link,
+[data-control-name] {
+  color: var(--bakugo-accent) !important;
+}
+
+a:hover {
+  color: var(--bakugo-accent-hover) !important;
+}
+
+/* Primary buttons */
+button[type="submit"],
+.artdeco-button--primary,
+[data-control-name="connect"] {
+  background: var(--bakugo-accent) !important;
+  border-color: var(--bakugo-accent) !important;
+}
+
+.artdeco-button--primary:hover {
+  background: var(--bakugo-accent-hover) !important;
+}
+
+/* Messaging, notifications */
+[data-test-id="messaging"],
+[aria-label="Messaging"] {
+  color: var(--bakugo-accent) !important;
+}

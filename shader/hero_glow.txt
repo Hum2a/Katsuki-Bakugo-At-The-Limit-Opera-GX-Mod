@@ -1,0 +1,9 @@
+// MHA Explosion Glow - warm red-orange tint (SkSL)
+uniform shader iChunk;
+
+// Red-orange pop on near-black UI - At The Limit variant
+const float4 TINT = float4(1.18, 0.90, 0.78, 1);
+
+vec4 main(vec2 xy) {
+  return pow(iChunk.eval(xy), TINT);
+}

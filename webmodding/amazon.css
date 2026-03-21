@@ -1,0 +1,52 @@
+/* Katsuki Bakugo - At The Limit - Amazon (theme.css loaded via manifest) */
+/* Main backgrounds */
+#nav-main,
+#nav-belt,
+#nav-footer,
+.nav-left,
+.nav-right {
+  background: var(--bakugo-bg-dark) !important;
+}
+
+#main-content,
+[data-cel-widget] {
+  background: var(--bakugo-bg-elevated) !important;
+}
+
+/* Links - Amazon orange → Bakugo red-orange */
+a,
+.a-link-normal,
+.a-color-link {
+  color: var(--bakugo-accent) !important;
+}
+
+a:hover,
+.a-link-normal:hover {
+  color: var(--bakugo-accent-hover) !important;
+}
+
+/* Add to cart, buy buttons */
+#add-to-cart-button,
+#buy-now-button,
+.a-button-primary,
+[data-cel-widget="addToCart"] .a-button {
+  background: var(--bakugo-accent) !important;
+  border-color: var(--bakugo-accent) !important;
+}
+
+#add-to-cart-button:hover,
+#buy-now-button:hover,
+.a-button-primary:hover {
+  background: var(--bakugo-accent-hover) !important;
+}
+
+/* Search bar */
+#twotabsearchtextbox {
+  background: var(--bakugo-bg-darker) !important;
+  border-color: var(--bakugo-border) !important;
+  color: var(--bakugo-text) !important;
+}
+
+#twotabsearchtextbox:focus {
+  border-color: var(--bakugo-accent) !important;
+}

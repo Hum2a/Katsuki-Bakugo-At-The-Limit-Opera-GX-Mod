@@ -1,0 +1,15 @@
+/* Katsuki Bakugo - At The Limit - Shared theme variables
+ * Red-orange on true black (redder than standard hero-suit orange)
+ */
+:root {
+  --bakugo-accent: #E63E18;
+  --bakugo-accent-hover: #FF7845;
+  --bakugo-accent-muted: rgba(230, 62, 24, 0.65);
+  --bakugo-accent-subtle: rgba(230, 62, 24, 0.22);
+  --bakugo-bg-dark: #000000;
+  --bakugo-bg-darker: #000000;
+  --bakugo-bg-elevated: #121212;
+  --bakugo-border: rgba(230, 62, 24, 0.38);
+  --bakugo-text: #f0f0f0;
+  --bakugo-text-muted: #9ca3af;
+}

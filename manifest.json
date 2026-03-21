@@ -1,0 +1,172 @@
+{
+  "manifest_version": 3,
+  "name": "Katsuki Bakugo - At The Limit",
+  "description": "Katsuki Bakugo themed Opera GX mod — animated wallpaper, custom background music, sounds, red-orange and black hero colours, shaders, and webmodding for 21+ popular sites (YouTube, X, Reddit, Discord, GitHub, Netflix, Spotify, and more)",
+  "version": "1.0.0",
+  "icons": {
+    "512": "Bakugo_AtLimit_Icon.png"
+  },
+  "developer": {
+    "name": "Humza Butt"
+  },
+  "mod": {
+    "schema_version": 1,
+    "license": "license.txt",
+    "payload": {
+      "wallpaper": {
+        "dark": {
+          "image": "wallpaper/Bakugo_At_The_Limit.mp4",
+          "first_frame": "wallpaper/Bakugo_At_The_Limit.first_frame.png",
+          "text_color": "#E63E18",
+          "text_shadow": "#000000"
+        },
+        "light": {
+          "image": "wallpaper/Bakugo_At_The_Limit.mp4",
+          "first_frame": "wallpaper/Bakugo_At_The_Limit.first_frame.png",
+          "text_color": "#141414",
+          "text_shadow": "#FF7845"
+        }
+      },
+      "background_music": [
+        "music/At_The_Limit.mp3"
+      ],
+      "browser_sounds": {
+        "CLICK": ["sound/click.wav"],
+        "FEATURE_SWITCH_OFF": ["sound/feature_switch_off.wav"],
+        "FEATURE_SWITCH_ON": ["sound/feature_switch_on.wav"],
+        "HOVER": ["sound/hover.wav"],
+        "HOVER_UP": ["sound/hover.wav"],
+        "IMPORTANT_CLICK": ["sound/important_click.wav"],
+        "LEVEL_UPGRADE": ["sound/level_upgrade.wav"],
+        "LIMITER_OFF": ["sound/limiter_off.wav"],
+        "LIMITER_ON": ["sound/limiter_on.wav"],
+        "SWITCH_TOGGLE": ["sound/switch.wav"],
+        "TAB_CLOSE": ["sound/close_tab.wav"],
+        "TAB_INSERT": ["sound/new_tab.wav"],
+        "TAB_SLASH": ["sound/tab_slash.wav"]
+      },
+      "keyboard_sounds": {
+        "TYPING_BACKSPACE": ["keyboard/backspace.wav"],
+        "TYPING_ENTER": ["keyboard/enter.wav"],
+        "TYPING_LETTER": ["keyboard/letter_1.wav", "keyboard/letter_2.wav", "keyboard/letter_3.wav"],
+        "TYPING_SPACE": ["keyboard/space.wav"]
+      },
+      "theme": {
+        "dark": {
+          "gx_accent": { "h": 15, "s": 100, "l": 52 },
+          "gx_secondary_base": { "h": 15, "s": 86, "l": 15 }
+        },
+        "light": {
+          "gx_accent": { "h": 15, "s": 100, "l": 46 },
+          "gx_secondary_base": { "h": 15, "s": 52, "l": 28 }
+        }
+      },
+      "shaders": {
+        "Explosion Glow": {
+          "path": "shader/hero_glow.txt"
+        },
+        "Howitzer Impact": {
+          "animation": { "duration": 60, "steps": 3600 },
+          "path": "shader/plus_ultra.txt"
+        }
+      },
+      "page_styles": [
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/opera.css"],
+          "matches": ["https://*.opera.com/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/gx-surfaces.css"],
+          "matches": [
+            "https://*.gx.games/*",
+            "https://gx.games/*",
+            "https://create.gx.games/*",
+            "https://*.gx.me/*",
+            "https://gx.me/*",
+            "https://store.gx.me/*"
+          ]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/youtube.css"],
+          "matches": ["https://*.youtube.com/*", "https://*.youtu.be/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/twitter.css"],
+          "matches": ["https://twitter.com/*", "https://x.com/*", "https://*.twitter.com/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/reddit.css"],
+          "matches": ["https://*.reddit.com/*", "https://*.redd.it/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/discord.css"],
+          "matches": ["https://discord.com/*", "https://*.discord.com/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/twitch.css"],
+          "matches": ["https://*.twitch.tv/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/github.css"],
+          "matches": ["https://github.com/*", "https://*.github.com/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/google.css"],
+          "matches": ["https://*.google.com/*", "https://*.google.co.uk/*", "https://*.google.ca/*", "https://mail.google.com/*", "https://drive.google.com/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/wikipedia.css"],
+          "matches": ["https://*.wikipedia.org/*", "https://*.wikimedia.org/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/netflix.css"],
+          "matches": ["https://*.netflix.com/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/steam.css"],
+          "matches": ["https://store.steampowered.com/*", "https://*.steampowered.com/*", "https://steamcommunity.com/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/amazon.css"],
+          "matches": ["https://*.amazon.com/*", "https://*.amazon.co.uk/*", "https://*.amazon.ca/*", "https://*.amazon.de/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/spotify.css"],
+          "matches": ["https://open.spotify.com/*", "https://*.spotify.com/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/facebook.css"],
+          "matches": ["https://*.facebook.com/*", "https://*.fb.com/*", "https://*.messenger.com/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/instagram.css"],
+          "matches": ["https://*.instagram.com/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/linkedin.css"],
+          "matches": ["https://*.linkedin.com/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/tiktok.css"],
+          "matches": ["https://*.tiktok.com/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/pinterest.css"],
+          "matches": ["https://*.pinterest.com/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/whatsapp.css"],
+          "matches": ["https://web.whatsapp.com/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/ebay.css"],
+          "matches": ["https://*.ebay.com/*", "https://*.ebay.co.uk/*"]
+        },
+        {
+          "css": ["webmodding/theme.css", "webmodding/micro-nuance.css", "webmodding/notion.css"],
+          "matches": ["https://*.notion.so/*", "https://*.notion.site/*"]
+        }
+      ]
+    }
+  }
+}
