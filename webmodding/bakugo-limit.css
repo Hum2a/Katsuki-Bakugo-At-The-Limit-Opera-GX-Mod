@@ -1,0 +1,107 @@
+/* Katsuki Bakugo - At The Limit — global bucket + legacy tokens (redder orange / black) */
+
+:root {
+  --bakugo-accent: #e63e18;
+  --bakugo-accent-hover: #ff7845;
+  --bakugo-accent-muted: rgba(230, 62, 24, 0.65);
+  --bakugo-accent-subtle: rgba(230, 62, 24, 0.22);
+  --bakugo-bg-dark: #000000;
+  --bakugo-bg-darker: #000000;
+  --bakugo-bg-elevated: #121212;
+  --bakugo-border: rgba(230, 62, 24, 0.38);
+  --bakugo-text: #f0f0f0;
+  --bakugo-text-muted: #9ca3af;
+
+  --bakugo-burst: #ff5722;
+  --bakugo-deep: #d84315;
+  --bakugo-ash: #ffccbc;
+  --bakugo-smoke-mist: rgba(8, 8, 8, 0.48);
+  --bakugo-burst-mist: rgba(255, 87, 34, 0.14);
+}
+
+@keyframes bakugo-limit-mist-shift {
+  0% {
+    opacity: 0.55;
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.04) translate3d(1.5%, -1%, 0);
+  }
+  100% {
+    opacity: 0.6;
+    transform: scale(1.08) translate3d(-1%, 1.2%, 0);
+  }
+}
+
+html {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(80% 60% at 15% 20%, var(--bakugo-burst-mist), transparent 55%),
+    radial-gradient(70% 55% at 85% 75%, var(--bakugo-smoke-mist), transparent 50%),
+    linear-gradient(
+      118deg,
+      color-mix(in srgb, env(-opera-gx-accent-color, var(--bakugo-burst)) 12%, transparent),
+      color-mix(in srgb, env(-opera-gx-background-color, var(--bakugo-ash)) 14%, transparent)
+    );
+  animation: bakugo-limit-mist-shift 22s ease-in-out infinite alternate;
+}
+
+a:any-link {
+  color: env(-opera-gx-accent-color, var(--bakugo-burst));
+}
+
+a:any-link:hover {
+  color: color-mix(in srgb, env(-opera-gx-accent-color, var(--bakugo-burst)) 82%, white);
+}
+
+:focus-visible {
+  outline: 2px solid env(-opera-gx-accent-color, var(--bakugo-burst));
+  outline-offset: 2px;
+}
+
+::selection {
+  background: color-mix(in srgb, env(-opera-gx-accent-color, var(--bakugo-burst)) 38%, transparent);
+  color: inherit;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--bakugo-text-muted) !important;
+  opacity: 1 !important;
+}
+
+* {
+  scrollbar-color: color-mix(in srgb, env(-opera-gx-accent-color, var(--bakugo-burst)) 55%, transparent)
+    color-mix(in srgb, env(-opera-gx-background-color, #0a0a0a) 40%, transparent);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: color-mix(in srgb, env(-opera-gx-background-color, #0a0a0a) 35%, transparent);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    env(-opera-gx-accent-color, var(--bakugo-burst)),
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--bakugo-burst)) 50%, #1a0a08)
+  );
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: env(-opera-gx-accent-color, var(--bakugo-burst));
+}

@@ -1,6 +1,4 @@
-﻿/* Katsuki Bakugo - At The Limit — GX web (store, creator, games portal) when opened in a tab.
- * Broad, low-specificity helpers; sites may override with more specific rules.
- */
+/* Katsuki Bakugo - At The Limit — GX web; tokens from bakugo-limit.css */
 html {
   color-scheme: dark;
 }

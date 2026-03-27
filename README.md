@@ -1,6 +1,6 @@
 # Katsuki Bakugo - At The Limit — Opera GX mod
 
-**My Hero Academia**–style mod for Opera GX themed around **Katsuki Bakugo**: animated wallpaper, background music, sounds, **red-orange on black** (a redder take than the orange *Rising* pack), shaders, and web modding for 21+ sites (same layout as *Katsuki Bakugo: Rising*).
+**My Hero Academia**–style mod for Opera GX themed around **Katsuki Bakugo**: animated wallpaper, background music, sounds, **red-orange on black** (redder than *Rising*), shaders, and **bucket web modding** (same structure as *Rising*: `bakugo-limit.css` + sites + Opera + GX).
 
 ## Structure
 
@@ -19,11 +19,11 @@ Katsuki Bakugo - At The Limit/
 └── scripts/
 ```
 
-## Extra polish
+## Web modding (bucket layout)
 
-- **`micro-nuance.css`** — Selection, scrollbar, `:focus-visible`, placeholders (redder orange / black).
-- **`gx-surfaces.css`** — GX web tabs: `gx.games`, `create.gx.games`, `gx.me`, `store.gx.me`.
-- **`opera.css`** — Richer rules for **`*.opera.com`**.
+- **`bakugo-limit.css`** — Global layer (redder burst / smoke mist) + legacy `--bakugo-*` tokens.
+- **`sites-01` … `sites-06`** — Same host buckets as *Rising*, tuned to red-orange accents.
+- **`bakugo-opera.css`** / **`bakugo-gx-surfaces.css`** — Opera.com and GX web surfaces.
 - **Wallpaper labels** — `manifest.json` → `text_color` / `text_shadow`: dark mode uses **red-orange** titles; light mode uses **near-black** text with a **soft red-orange** shadow.
 
 ## Assets

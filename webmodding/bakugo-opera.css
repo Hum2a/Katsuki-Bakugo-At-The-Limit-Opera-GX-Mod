@@ -1,6 +1,4 @@
-﻿/* Katsuki Bakugo - At The Limit — Opera marketing / help / account pages (https://*.opera.com)
- * Uses theme tokens + Opera env() fallbacks where the engine exposes them.
- */
+/* Katsuki Bakugo - At The Limit — https://*.opera.com (tokens from bakugo-limit.css) */
 html {
   color-scheme: dark;
 }
@@ -36,7 +34,7 @@ a[href]:hover {
 }
 
 a[href]:visited {
-  color: #c96d18 !important;
+  color: #b71c1c !important;
 }
 
 header,
