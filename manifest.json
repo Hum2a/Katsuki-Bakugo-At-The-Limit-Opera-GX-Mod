@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Katsuki Bakugo - At The Limit",
   "description": "Katsuki Bakugo themed Opera GX mod \u2014 animated wallpaper, custom background music, sounds, red-orange and black hero colours, shaders, and webmodding for 21+ popular sites (YouTube, X, Reddit, Discord, GitHub, Netflix, Spotify, and more)",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "icons": {
     "512": "Bakugo_AtLimit_Icon.png"
   },
